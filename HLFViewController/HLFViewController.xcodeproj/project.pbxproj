@@ -13,9 +13,12 @@
 		5079FA48214C095200298F6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5079FA47214C095200298F6B /* Assets.xcassets */; };
 		5079FA4B214C095200298F6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5079FA49214C095200298F6B /* LaunchScreen.storyboard */; };
 		5079FA4E214C095200298F6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5079FA4D214C095200298F6B /* main.m */; };
+		5079FA5A214C14CF00298F6B /* HLFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5079FA58214C14CF00298F6B /* HLFViewController.m */; };
+		D1FBC47F9288CAD4B56669D4 /* libPods-HLFViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC03E1C2F0C8C3DA61E468DF /* libPods-HLFViewController.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45935BC1A5AD4BA5DD1F7496 /* Pods-HLFViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLFViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HLFViewController/Pods-HLFViewController.debug.xcconfig"; sourceTree = "<group>"; };
 		5079FA3B214C095200298F6B /* HLFViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLFViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5079FA3E214C095200298F6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5079FA3F214C095200298F6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,11 @@
 		5079FA4A214C095200298F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5079FA4C214C095200298F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5079FA4D214C095200298F6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5079FA58214C14CF00298F6B /* HLFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLFViewController.m; sourceTree = "<group>"; };
+		5079FA59214C14CF00298F6B /* HLFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLFViewController.h; sourceTree = "<group>"; };
+		5079FA5B214C15C000298F6B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EC03E1C2F0C8C3DA61E468DF /* libPods-HLFViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HLFViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA570DDACE92F78E9278E8E /* Pods-HLFViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLFViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-HLFViewController/Pods-HLFViewController.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1FBC47F9288CAD4B56669D4 /* libPods-HLFViewController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		497E0F195096231D97BAA0D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45935BC1A5AD4BA5DD1F7496 /* Pods-HLFViewController.debug.xcconfig */,
+				EEA570DDACE92F78E9278E8E /* Pods-HLFViewController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5079FA32214C095200298F6B = {
 			isa = PBXGroup;
 			children = (
 				5079FA3D214C095200298F6B /* HLFViewController */,
 				5079FA3C214C095200298F6B /* Products */,
+				497E0F195096231D97BAA0D3 /* Pods */,
+				9DE7CFED94A57C9B6DD5A3BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +78,7 @@
 		5079FA3D214C095200298F6B /* HLFViewController */ = {
 			isa = PBXGroup;
 			children = (
+				5079FA57214C14CF00298F6B /* Classes */,
 				5079FA3E214C095200298F6B /* AppDelegate.h */,
 				5079FA3F214C095200298F6B /* AppDelegate.m */,
 				5079FA41214C095200298F6B /* ViewController.h */,
@@ -67,8 +88,26 @@
 				5079FA49214C095200298F6B /* LaunchScreen.storyboard */,
 				5079FA4C214C095200298F6B /* Info.plist */,
 				5079FA4D214C095200298F6B /* main.m */,
+				5079FA5B214C15C000298F6B /* PrefixHeader.pch */,
 			);
 			path = HLFViewController;
+			sourceTree = "<group>";
+		};
+		5079FA57214C14CF00298F6B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5079FA58214C14CF00298F6B /* HLFViewController.m */,
+				5079FA59214C14CF00298F6B /* HLFViewController.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9DE7CFED94A57C9B6DD5A3BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC03E1C2F0C8C3DA61E468DF /* libPods-HLFViewController.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +117,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5079FA51214C095200298F6B /* Build configuration list for PBXNativeTarget "HLFViewController" */;
 			buildPhases = (
+				DE835EBA2EC0E9409BB8E800 /* [CP] Check Pods Manifest.lock */,
 				5079FA37214C095200298F6B /* Sources */,
 				5079FA38214C095200298F6B /* Frameworks */,
 				5079FA39214C095200298F6B /* Resources */,
@@ -136,6 +176,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DE835EBA2EC0E9409BB8E800 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HLFViewController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5079FA37214C095200298F6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -144,6 +209,7 @@
 				5079FA43214C095200298F6B /* ViewController.m in Sources */,
 				5079FA4E214C095200298F6B /* main.m in Sources */,
 				5079FA40214C095200298F6B /* AppDelegate.m in Sources */,
+				5079FA5A214C14CF00298F6B /* HLFViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,10 +349,12 @@
 		};
 		5079FA52214C095200298F6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45935BC1A5AD4BA5DD1F7496 /* Pods-HLFViewController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UNB348Y3D7;
+				GCC_PREFIX_HEADER = HLFViewController/PrefixHeader.pch;
 				INFOPLIST_FILE = HLFViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,10 +368,12 @@
 		};
 		5079FA53214C095200298F6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEA570DDACE92F78E9278E8E /* Pods-HLFViewController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UNB348Y3D7;
+				GCC_PREFIX_HEADER = HLFViewController/PrefixHeader.pch;
 				INFOPLIST_FILE = HLFViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
