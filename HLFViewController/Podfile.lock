@@ -1,25 +1,3 @@
-PODS:
-  - CocoaLumberjack (3.4.1):
-    - CocoaLumberjack/Default (= 3.4.1)
-    - CocoaLumberjack/Extensions (= 3.4.1)
-  - CocoaLumberjack/Default (3.4.1)
-  - CocoaLumberjack/Extensions (3.4.1):
-    - CocoaLumberjack/Default
-  - HLFDDLog (0.0.2):
-    - CocoaLumberjack (= 3.4.1)
-
-DEPENDENCIES:
-  - HLFDDLog (= 0.0.2)
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - CocoaLumberjack
-    - HLFDDLog
-
-SPEC CHECKSUMS:
-  CocoaLumberjack: 2e258a064cacc8eb9a2aca318e24d02a0a7fd56d
-  HLFDDLog: 69045b1666106e7bc61c71a159907b19e99777ed
-
-PODFILE CHECKSUM: 888b3835d2d18656894960ac8bb1387972ba50a8
+PODFILE CHECKSUM: e7cd6830c47aba9c567c8b71851a3fb64536aa82
 
 COCOAPODS: 1.5.3

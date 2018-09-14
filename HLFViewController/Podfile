@@ -2,5 +2,5 @@
 # platform :ios, '8.0'
 
 target 'HLFViewController' do
-   pod 'HLFDDLog', '0.0.2'
+   
 end
