@@ -30,6 +30,12 @@
 - (void)viewWillAppearAgain;
 
 #pragma mark - push
+/**
+ 跳转到指定类的控制器
+
+ @param vcClass 控制器的类
+ @param animated 是否需要跳转动画
+ */
 - (void)pushToViewControllerWithClass:(Class)vcClass animated:(BOOL)animated;
 
 #pragma mark - Back/Pop
